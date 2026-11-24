@@ -286,6 +286,10 @@ section[id] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* AJUSTE DE ENCUADRE: 50% = centrado horizontal.
+     El segundo valor sube/baja la foto: 0% = muestra lo más alto,
+     100% = muestra lo más bajo. Probá 0%, 10%, 20%... hasta que se vea bien */
+  object-position: 50% 10%;
   border-radius: 50%;
   border: 4px solid var(--pink);
   background: var(--bg);
@@ -327,6 +331,9 @@ section[id] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* AJUSTE DE ENCUADRE (igual que arriba): cambiá el segundo valor
+     hasta que la cara quede completa */
+  object-position: 50% 15%;
   border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
   border: 3px solid var(--pink);
 }
