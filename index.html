@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheila Wayar | Programadora Web Junior</title>
+  <meta name="description" content="Portfolio de Sheila Wayar, programadora web junior de Salta, Argentina. Proyectos con HTML, CSS, JavaScript, Python y React.">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== MENÚ ========== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.jpeg" alt="Logo de Sheila Wayar">
+      </a>
+
+      <ul class="nav-links" id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#estudios">Estudios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="#contacto" class="btn btn-small nav-cta">Contactame</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== INICIO ========== -->
+    <section id="inicio" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">¡HOLA!</p>
+        <h1>Soy <span class="grad">Sheila Wayar</span></h1>
+        <h2>Programadora Web & Desarrolladora</h2>
+        <p class="hero-desc">
+          Desarrollo sitios y aplicaciones web modernas, rápidas y fáciles de usar.
+          Mi enfoque combina diseño, lógica y experiencia de usuario para crear productos
+          digitales claros, ordenados y pensados para resolver problemas reales.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn">Ver proyectos <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="cv/MiCV.pdf" download="CV-Sheila-Wayar.pdf" class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> Descargar CV
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/SheilaWayar" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/TU-USUARIO/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/sheii.wayar" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="img/foto.jpg" alt="Foto de perfil de Sheila Wayar, programadora web">
+      </div>
+    </section>
+
+    <!-- ========== SOBRE MÍ ========== -->
+    <section id="sobre-mi" class="about">
+      <div class="container about-grid">
+
+        <div class="about-img">
+          <img src="img/foto2.jpg" alt="Sheila Wayar trabajando en su computadora">
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">SOBRE MÍ</p>
+          <h2 class="section-title">Convirtiendo ideas en <span class="grad">realidad digital</span></h2>
+          <p>
+            Soy de Salta, Argentina. Programadora Web Junior, responsable, detallista
+            y con muchas ganas de aprender y crecer. Me comprometo con cada proyecto,
+            cuido cada detalle y busco siempre dar lo mejor para lograr un trabajo
+            prolijo y de calidad.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <i class="fa-regular fa-calendar"></i>
+              <h3 class="counter" data-target="2">0</h3>
+              <span>Años de estudio</span>
+            </div>
+            <div class="stat">
+              <i class="fa-regular fa-folder"></i>
+              <h3 class="counter" data-target="4">0</h3>
+              <span>Proyectos</span>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3 class="counter" data-target="5">0</h3>
+              <span>Cursos</span>
+            </div>
+          </div>
+
+          <a href="#contacto" class="btn">Hablemos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades" class="skills container">
+      <p class="eyebrow">MIS HABILIDADES</p>
+      <h2 class="section-title">Skills técnicas & <span class="grad">experiencia</span></h2>
+      <p class="section-desc">Trabajo con tecnologías modernas para crear aplicaciones web rápidas y escalables.</p>
+
+      <!-- Se llena sola desde js/data.js -->
+      <div id="skills-list" class="skills-grid"></div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <section id="proyectos" class="projects container">
+      <p class="eyebrow">MI TRABAJO</p>
+      <h2 class="section-title">Mis <span class="grad">proyectos</span></h2>
+      <p class="section-desc">Algunos de los proyectos en los que trabajé y que me ayudaron a crecer.</p>
+
+      <!-- Se llena sola desde js/data.js -->
+      <div id="projects-list" class="projects-grid"></div>
+    </section>
+
+    <!-- ========== ESTUDIOS ========== -->
+    <section id="estudios" class="studies container">
+      <p class="eyebrow">FORMACIÓN</p>
+      <h2 class="section-title">Mis <span class="grad">estudios</span></h2>
+      <p class="section-desc">Mi recorrido académico y los cursos con los que sigo aprendiendo.</p>
+
+      <!-- Se llena sola desde js/data.js -->
+      <div id="studies-list" class="timeline"></div>
+    </section>
+
+    <!-- ========== DESCARGAR CV ========== -->
+    <section id="cv" class="cv-section">
+      <div class="container cv-box">
+        <div class="cv-info">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+          <div>
+            <h3>Mi currículum</h3>
+            <p>Descargá mi CV en PDF para conocer mi formación y experiencia.</p>
+          </div>
+        </div>
+        <a href="cv/MiCV.pdf" download="CV-Sheila-Wayar.pdf" class="btn">
+          <i class="fa-solid fa-download"></i> Descargar CV
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="contact container">
+      <p class="eyebrow">CONTACTO</p>
+      <h2 class="section-title">Trabajemos <span class="grad">juntos</span></h2>
+      <p class="section-desc">¿Tenés un proyecto o querés charlar? Escribime, me encantaría saber de vos.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <a href="mailto:sheila.wayar.3@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div>
+              <h4>Email</h4>
+              <span>sheila.wayar.3@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/TU-USUARIO/" target="_blank" rel="noopener" class="contact-card">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <span>linkedin.com/in/TU-USUARIO</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/SheilaWayar" target="_blank" rel="noopener" class="contact-card">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <div>
+              <h4>GitHub</h4>
+              <span>github.com/SheilaWayar</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Formulario: reemplazá TU_ID por el ID de Formspree -->
+        <form class="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" aria-label="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu email" aria-label="Tu email" required>
+          <textarea name="mensaje" rows="5" placeholder="Tu mensaje" aria-label="Tu mensaje" required></textarea>
+          <button type="submit" class="btn">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIE ========== -->
+  <footer class="footer">
+    <p>© 2026 Sheila Wayar · Hecho con <i class="fa-solid fa-heart" aria-hidden="true"></i> y mucho código</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
